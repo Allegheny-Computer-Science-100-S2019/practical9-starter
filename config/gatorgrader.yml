@@ -1,0 +1,43 @@
+---
+name: cmpsc-100-spring-2019-practical9
+break: true
+indent: 4
+---
+src/main:
+    java:
+        practicalnine/Practical9.java:
+            --single 5 --language Java
+            --multi 2 --language Java
+            --fragment "new Date(" --count 1
+            --fragment "new Octopus(" --count 2
+            --fragment "new Utensil(" --count 2
+            --fragment "System.out.println(" --count 12
+        practicalnine/Octopus.java:
+            --multi 10 --language Java
+            --single 5 --language Java
+            --fragment "Octopus(String octopusName, int octopusAge)" --count 1
+            --fragment "age = octopusAge" --count 1
+            --fragment "return" --count 5
+            --fragment "Utensil(" --count 1
+            --fragment "setAge(" --count 1
+            --fragment "getAge(" --count 1
+            --fragment "setWeight(" --count 1
+            --fragment "getWeight(" --count 1
+            --fragment "setUtensil(" --count 1
+            --fragment "getUtensil(" --count 1
+            --fragment "getName(" --count 1
+            --fragment "toString(" --count 1
+            --fragment "System.out.println(" --count 0
+        practicalnine/Utensil.java:
+            --multi 7 --language Java
+            --single 4 --language Java
+            --fragment "Utensil(" --count 1
+            --fragment "setCost(" --count 1
+            --fragment "getCost(" --count 1
+            --fragment "setColor(" --count 1
+            --fragment "getColor(" --count 1
+            --fragment "toString(" --count 1
+            --fragment "System.out.println(" --count 0
+--commits 2
+
+--command "gradle -q --console plain run" --executes
